@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: dev
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/loreatlas
+    username: dev
+    password: dev
+    hikari:
+      maximum-pool-size: 10
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  liquibase:
+    change-log: classpath:db/master-changelog.xml
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
