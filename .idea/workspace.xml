@@ -4,25 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b60682d-5d95-4ec4-96ff-d96d00453187" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/loreatlas.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/db/master-changelog.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+    <list default="true" id="1b60682d-5d95-4ec4-96ff-d96d00453187" name="Changes" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/AuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/LogoutService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/UserDetailsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/api/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/api/AuthRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/api/AuthResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/api/RegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/cmm/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/cmm/CrudService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/cmm/CrudServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/cmm/SpecificationBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/cmm/exception/EntityNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/config/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/config/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/UserRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/ChangePasswordRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/UserFindAllRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/UserPostRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/UserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/mapper/UserPostRequestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/mapper/UserResponseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/db/user/token_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/db/user/user_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/db/user/user_token_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -56,7 +92,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.BackendApplication.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "1.0.0-basics-cmm",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "I:/Emil/Projekty/justpray_backend",
     "node.js.detected.package.eslint": "true",
@@ -65,10 +101,18 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.dev.executor": "Run",
-    "ts.external.directory.path": "I:\\Emil\\Projekty\\loreatlas\\forntend\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "I:\\Emil\\Projekty\\loreatlas\\frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\Emil\Projekty\loreatlas\frontend\src\components" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pl.com.ezdev.loreatlas.modules.user" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.dev">
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="loreatlas" />
@@ -112,10 +156,38 @@
       <workItem from="1757526963465" duration="1603000" />
       <workItem from="1757528591074" duration="188000" />
       <workItem from="1757528785006" duration="1919000" />
+      <workItem from="1757530732697" duration="836000" />
+      <workItem from="1757663547759" duration="1000" />
+      <workItem from="1757663593558" duration="7000" />
+      <workItem from="1757957754481" duration="4198000" />
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1757531187403</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1757531187403</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
   </component>
 </project>
