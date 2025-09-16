@@ -3,8 +3,8 @@ package pl.com.ezdev.loreatlas.modules.user.api.mapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.factory.Mappers;
-import pl.com.ezdev.loreatlas.modules.user.User;
-import pl.com.ezdev.loreatlas.modules.user.api.UserPostRequest;
+import pl.com.ezdev.loreatlas.modules.user.domain.User;
+import pl.com.ezdev.loreatlas.modules.user.api.request.UserPostRequest;
 
 @Mapper
 public interface UserPostRequestMapper {

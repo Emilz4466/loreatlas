@@ -1,59 +1,48 @@
 package pl.com.ezdev.loreatlas.modules.user.api;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import pl.com.ezdev.loreatlas.core.base.CrudControllerImpl;
+import pl.com.ezdev.loreatlas.modules.user.domain.Role;
+import pl.com.ezdev.loreatlas.modules.user.domain.User;
+import pl.com.ezdev.loreatlas.modules.user.api.request.ChangePasswordRequest;
+import pl.com.ezdev.loreatlas.modules.user.api.request.UserFindAllRequest;
+import pl.com.ezdev.loreatlas.modules.user.api.request.UserPostRequest;
+import pl.com.ezdev.loreatlas.modules.user.api.response.UserResponse;
+import pl.com.ezdev.loreatlas.modules.user.service.UserService;
 
 import java.security.Principal;
-import java.util.List;
 
 @RestController
-@RequestMapping("/justpray/api/v1/user")
-@RequiredArgsConstructor
-public class UserController {
+@RequestMapping("/justpray/api/v1/users")
+public class UserController
+        extends CrudControllerImpl<User, Long, UserPostRequest, UserResponse, UserFindAllRequest> {
 
     private final UserService userService;
 
-    @GetMapping("/getUser/{id}")
-    public ResponseEntity<UserResponse> getUser(@PathVariable Long id) {
-        return ResponseEntity.ok(userService.get(id));
+    public UserController(UserService userService) {
+        super(userService);
+        this.userService = userService;
     }
 
-    @PostMapping("/updateUser/{id}")
-    public ResponseEntity<UserResponse> updateUser(@PathVariable Long id, @RequestBody UserPostRequest request) {
-        return ResponseEntity.ok(userService.update(id, request));
-    }
-
-    @DeleteMapping("/deleteUser/{id}")
-    public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
-        userService.delete(id);
-        return ResponseEntity.noContent().build();
-    }
-
-
-    @GetMapping("/findAllUsers")
-    public List<UserResponse> findAllUsers(@RequestParam(required = false) String username, @RequestParam(required = false) String email, @RequestParam(required = false) Role role) {
-        return userService.findAll(new UserFindAllRequest(username, email, role));
-    }
-
-    @GetMapping("/getUserByEmail/{email}")
+    @GetMapping("/by-email/{email}")
     public ResponseEntity<UserResponse> getUserByEmail(@PathVariable String email) {
         return ResponseEntity.ok(userService.getUserByEmail(email));
     }
 
-    @GetMapping("/getUserByEmail/{username}")
+    @GetMapping("/by-username/{username}")
     public ResponseEntity<UserResponse> getUserByUsername(@PathVariable String username) {
         return ResponseEntity.ok(userService.getUserByUsername(username));
     }
 
-    @PostMapping("/changeRole/{id}/{role}")
+    @PostMapping("/{id}/change-role/{role}")
     public ResponseEntity<Void> changeRole(@PathVariable Long id, @PathVariable Role role) {
         userService.changeRole(id, role);
         return ResponseEntity.noContent().build();
     }
 
-    @PatchMapping
-    public ResponseEntity<?> changePassword(
+    @PatchMapping("/change-password")
+    public ResponseEntity<Void> changePassword(
             @RequestBody ChangePasswordRequest request,
             Principal connectedUser
     ) {

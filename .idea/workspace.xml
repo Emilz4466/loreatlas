@@ -4,41 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b60682d-5d95-4ec4-96ff-d96d00453187" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/AuthenticationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/LogoutService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/UserDetailsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/api/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/api/AuthRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/api/AuthResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/api/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/cmm/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/cmm/CrudService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/cmm/CrudServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/cmm/SpecificationBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/cmm/exception/EntityNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/config/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/config/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/UserRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/ChangePasswordRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/UserFindAllRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/UserPostRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/UserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/mapper/UserPostRequestMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/mapper/UserResponseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/db/user/token_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/db/user/user_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/db/user/user_token_table.sql" afterDir="false" />
+    <list default="true" id="1b60682d-5d95-4ec4-96ff-d96d00453187" name="Changes" comment="User entity, basic cmm">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/core/base/CrudController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/core/base/CrudControllerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/auth/service/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/auth/service/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/LogoutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/auth/service/LogoutService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/UserDetailsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/auth/security/UserDetailsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/auth/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/api/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/auth/api/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/api/AuthRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/auth/api/request/AuthRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/api/AuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/auth/api/response/AuthResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/auth/api/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/auth/api/request/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/cmm/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/core/base/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/cmm/CrudService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/core/base/CrudService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/cmm/CrudServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/core/base/CrudServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/cmm/SpecificationBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/core/specification/SpecificationBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/cmm/exception/EntityNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/core/exception/EntityNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/repo/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/ChangePasswordRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/request/ChangePasswordRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/domain/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/UserFindAllRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/request/UserFindAllRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/UserPostRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/request/UserPostRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/response/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/mapper/UserPostRequestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/mapper/UserPostRequestMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/mapper/UserResponseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pl/com/ezdev/loreatlas/modules/user/api/mapper/UserResponseMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +43,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -94,7 +89,7 @@
     "Spring Boot.BackendApplication.executor": "Run",
     "git-widget-placeholder": "1.0.0-basics-cmm",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "I:/Emil/Projekty/justpray_backend",
+    "last_opened_file_path": "I:/Emil/Projekty/loreatlas/backend/src/main/java/pl/com/ezdev/loreatlas/modules",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -159,7 +154,8 @@
       <workItem from="1757530732697" duration="836000" />
       <workItem from="1757663547759" duration="1000" />
       <workItem from="1757663593558" duration="7000" />
-      <workItem from="1757957754481" duration="4198000" />
+      <workItem from="1757957754481" duration="4244000" />
+      <workItem from="1758039076242" duration="1064000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -169,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757531187403</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="User entity, basic cmm">
+      <option name="closed" value="true" />
+      <created>1757962502421</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1757962502421</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +192,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="User entity, basic cmm" />
+    <option name="LAST_COMMIT_MESSAGE" value="User entity, basic cmm" />
   </component>
 </project>
