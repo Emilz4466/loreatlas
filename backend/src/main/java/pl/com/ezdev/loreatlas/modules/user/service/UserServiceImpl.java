@@ -61,25 +61,29 @@ public class UserServiceImpl
                 .build();
     }
 
-    // --- metody specyficzne dla domeny ---
+    @Override
+    protected Class<User> getEntityClass() {
+        return User.class;
+    }
+
     @Override
     public UserResponse getUserByEmail(String email) {
         return userRepo.findByEmail(email)
                 .map(UserResponseMapper.INSTANCE::entityToResponse)
-                .orElseThrow(() -> new EntityNotFoundException("User not found with email = " + email));
+                .orElseThrow(() -> new EntityNotFoundException(getEntityClass(), "email", email));
     }
 
     @Override
     public UserResponse getUserByUsername(String username) {
         return userRepo.findByUsername(username)
                 .map(UserResponseMapper.INSTANCE::entityToResponse)
-                .orElseThrow(() -> new EntityNotFoundException("User not found with username = " + username));
+                .orElseThrow(() -> new EntityNotFoundException(getEntityClass(), "username", username));
     }
 
     @Override
     public void changeRole(Long id, Role role) {
         User user = userRepo.findById(id)
-                .orElseThrow(() -> new EntityNotFoundException("User not found with id = " + id));
+                .orElseThrow(() -> new EntityNotFoundException(getEntityClass(), "id", id));
         user.setRole(role);
         userRepo.save(user);
     }
